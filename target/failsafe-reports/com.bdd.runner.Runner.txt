@@ -1,0 +1,23 @@
+-------------------------------------------------------------------------------
+Test set: com.bdd.runner.Runner
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 25.605 sec <<< FAILURE! - in com.bdd.runner.Runner
+Registrar la consulta en el modulo de contacto web(Modulo contacto web)  Time elapsed: 24.354 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at com.bdd.generico.webDriverDOM.generarEvidencia(webDriverDOM.java:56)
+	at com.bdd.web.page.ContactoWebPage.ingresarMensaje(ContactoWebPage.java:62)
+	at com.bdd.web.steps.ContactoWebSteps.ingreso_el_mensaje_que_deseo_enviar(ContactoWebSteps.java:39)
+	at com.bdd.web.steps.ContactoWebSteps$ByteBuddy$p7dWKF2c.ingreso_el_mensaje_que_deseo_enviar$accessor$HDBT3Fo7(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:18)
+	at net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:18)
+	at net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:394)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:179)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:77)
+	at com.bdd.web.steps.ContactoWebSteps$ByteBuddy$p7dWKF2c.ingreso_el_mensaje_que_deseo_enviar(Unknown Source)
+	at com.bdd.web.stepDefinition.ContactoWebStepDefinition.ingreso_el_mensaje_que_deseo_enviar(ContactoWebStepDefinition.java:38)
+	at ?.ingreso el mensaje que deseo enviar Hola, quisiera información sobre sus productos(src/test/resources/features/ContactoWeb.feature:16)
+
